@@ -1,11 +1,9 @@
-<h1 align="center">
-  TODO List
-</h1>
+# TODO List
 
 API para gerenciar tarefas (CRUD) que faz parte [desse desafio](https://github.com/simplify-liferay/desafio-junior-backend-simplify) para pessoas desenvolvedoras backend júnior, que se candidatam para a Simplify.
 
 ## Tecnologias
- 
+
 - [Spring Boot](https://spring.io/projects/spring-boot)
 - [Spring MVC](https://docs.spring.io/spring-framework/reference/web/webmvc.html)
 - [Spring Data JPA](https://spring.io/projects/spring-data-jpa)
@@ -25,12 +23,15 @@ API para gerenciar tarefas (CRUD) que faz parte [desse desafio](https://github.c
 
 - Clonar repositório git
 - Construir o projeto:
+
+```bash
+./mvnw clean package
 ```
-$ ./mvnw clean package
-```
+
 - Executar a aplicação:
-```
-$ java -jar target/to-do-list-0.0.1-SNAPSHOT.jar
+
+```bash
+java -jar target/to-do-list-0.0.1-SNAPSHOT.jar
 ```
 
 A API poderá ser acessada em [localhost:8080](http://localhost:8080).
@@ -40,8 +41,9 @@ O Swagger poderá ser visualizado em [http://localhost:8080/swagger-ui/index.htm
 
 Para fazer as requisições HTTP abaixo, foi utilizada a ferramenta [httpie](https://httpie.io):
 
-- Criar Tarefa 
-```
+- Criar Tarefa
+
+```bash
 $ http POST :8080/todos nome="Tarefa #1" descricao="Descrição Tarefa #1" prioridade=1
 
 [
@@ -56,7 +58,8 @@ $ http POST :8080/todos nome="Tarefa #1" descricao="Descrição Tarefa #1" prior
 ```
 
 - Listar Tarefas
-```
+
+```bash
 $ http GET :8080/todos
 
 [
@@ -71,7 +74,8 @@ $ http GET :8080/todos
 ```
 
 - Atualizar Tarefa
-```
+
+```bash
 $ http PUT :8080/todos/1 nome="Tarefa #1 Up" descricao="Descrição Tarefa #1 Up" prioridade=2
 
 [
@@ -86,7 +90,8 @@ $ http PUT :8080/todos/1 nome="Tarefa #1 Up" descricao="Descrição Tarefa #1 Up
 ```
 
 - Remover Tarefa
-```
+
+```bash
 http DELETE :8080/todos/1
 
 [ ]
