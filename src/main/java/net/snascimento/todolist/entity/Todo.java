@@ -37,7 +37,7 @@ public class Todo {
         this.prioridade = prioridade;
     }
 
-    public Todo(String nome, String descricao, boolean realizado, int prioridade) {
+    public Todo(@NotBlank String nome, @NotBlank String descricao, boolean realizado, int prioridade) {
         this.nome = nome;
         this.descricao = descricao;
         this.realizado = realizado;
