@@ -22,6 +22,7 @@ API para gerenciar tarefas (CRUD) que faz parte [desse desafio](https://github.c
 ## Como Executar
 
 - Clonar repositório git
+- Ajustar informações de banco de dados nos arquivos `application-dev.yml` e criar seu `env.properties` a partir do exemplo em `env-example.properties`)
 - Construir o projeto:
 
 ```bash
